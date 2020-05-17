@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bolsa de valores</string>
+    <string name="informar_preco">ativo</string>
+    <string name="ativo">Ativo</string>
+    <string name="Cod_Empresa">Código da Empresa</string>
+    <string name="lucro_liquido">Lucro Líquido</string>
+    <string name="patrimonio_liquido">Patrimônio Líquido</string>
+    <string name="acoes">Número de Ações</string>
+    <string name="preco">Preço Atual</string>
+    <string name="lpa">LPA :</string>
+    <string name="pl">P/L :</string>
+    <string name="roe">ROE:</string>
+    <string name="vpa">VPA :</string>
+    <string name="pvp">P/VP :</string>
+</resources>

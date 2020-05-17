@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/valores" />
+
+
+
+    <TextView
+        android:id="@+id/lpa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/lpa"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/pl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/pl"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/lpa"/>
+
+    <TextView
+        android:id="@+id/roe"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/roe"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/pl"/>
+
+    <TextView
+        android:id="@+id/vpa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/vpa"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/roe"/>
+
+    <TextView
+        android:id="@+id/pvp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/pvp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/vpa"/>
+
+</RelativeLayout>

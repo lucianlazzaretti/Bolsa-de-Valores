@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/valores" />
+
+    <TextView
+        android:id="@+id/ativo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/ativo"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView"/>
+
+    <EditText
+        android:id="@+id/edCodigoEmpresa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/Cod_Empresa"
+        android:textColorHint="#cfd8dc"
+        android:textColor="#263238"
+        android:layout_below="@id/ativo"/>
+
+    <TextView
+        android:id="@+id/lucroliquido"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edCodigoEmpresa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/lucro_liquido"
+        android:textColor="#212121"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edLucroLiquido"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/lucro_liquido"
+        android:textColorHint="#cfd8dc"
+        android:textColor="#263238"
+        android:layout_below="@id/lucroliquido"/>
+
+    <TextView
+        android:id="@+id/patrimonio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/patrimonio_liquido"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/edLucroLiquido"/>
+
+    <EditText
+        android:id="@+id/edPatrimonio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/patrimonio_liquido"
+        android:textColorHint="#cfd8dc"
+        android:textColor="#263238"
+        android:layout_below="@id/patrimonio"/>
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/acoes"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/edPatrimonio"/>
+
+    <EditText
+        android:id="@+id/edAcoes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/acoes"
+        android:textColorHint="#cfd8dc"
+        android:textColor="#263238"
+        android:layout_below="@id/numero"/>
+
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/preco"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_below="@id/edAcoes"/>
+
+    <EditText
+        android:id="@+id/edPreco"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preco"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/preco"
+        android:inputType="numberDecimal"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:onClick="CalcularBolsa"
+        android:text="Calcular Indicadores"
+        android:layout_below="@id/edPreco"
+        android:background="#4a148c"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>
